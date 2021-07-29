@@ -1,5 +1,5 @@
 
-//Sesion SW2js 1
+//Sesion SW2js 2
 //Reto 1: Operadores condicionales
 const time = 13;
 let greeting;
@@ -58,7 +58,7 @@ for(let i = 0; i <= 100; i++){
 }
 
 
-//Sesiones DW2js 2
+//Sesiones DW2js 3
 
 //Reto 1: Calcular promedio
 
@@ -136,3 +136,37 @@ for (let i = 2; i < myArray.length; i++){
 }
 
 console.log(suma);
+
+
+//Sesiones DW2js 4
+
+//Reto 1: Potenciación
+function power(base, exponent) {
+    let result = 1;
+    for (let i=1; i<=exponent; i++){
+        result  = result * base;
+
+    }
+    console.log(result);
+}
+
+power(3,3);
+
+//Reto 2: Retornar el numero mayor
+const getLergerInt = (num1, num2) => {
+    if(num1 > num2){
+        return num1
+    }else{
+        return num2
+    }
+}
+
+console.log(getLergerInt(5,7));
+
+//Reto 3: Fibbonacci
+function fibonacci(num) {
+    let result;
+    return result = (num === 0) ? 0 :(num === 1) ? 1 : fibonacci(num-1) + fibonacci(num-2);
+}
+
+console.log(fibonacci(20));
